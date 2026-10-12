@@ -127,7 +127,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
             "حيث يتمتع بخصوصية عالية وموثوقة للمستخدم.\n\n"
             "اضغط على الزر أدناه للبدء:"
         )
-        markup = InlineKeyboardMarkup([[InlineKeyboardButton("نعم، أريد فحص الجوال 🔍", callback_data="want_to_scan")]])
+        markup = InlineKeyboardMarkup([[InlineKeyboardButton("نعم،  افحص موقعك الآن 🔍", callback_data="want_to_scan")]])
         await update.message.reply_text(text, reply_markup=markup, parse_mode="Markdown")
 
 async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
