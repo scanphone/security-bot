@@ -120,12 +120,11 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         markup = InlineKeyboardMarkup([[InlineKeyboardButton("افتح فحص الأمان 🔍", web_app=WebAppInfo(url=personalized_url))]])
         await update.message.reply_text("👋 أهلاً بك مجدداً! حسابك مفعل ولديك صلاحية الوصول.", reply_markup=markup)
     else:
-        text = (
-            "🛡️ **مرحباً بك في بوت الفحص الأمني المتقدم**\n\n"
-            "إذا كنت ترغب بفحص جوالك، فالنتيجة ستظهر لك فوراً وبشكل دقيق.\n"
-            "🔒 **نحيطك علماً بأن البوت لا يقوم بحفظ أي بيانات أو معلومات عنك نهائياً**، "
-            "حيث يتمتع بخصوصية عالية وموثوقة للمستخدم.\n\n"
-            "اضغط على الزر أدناه للبدء:"
+        text = (         "أهلاً بك في بوت **كشف التلاعب بالاحداثيات** 🛡️.\n\n"
+            "محمل برامج تغيير موقع ومفعلها غير عن موقعك الأصلي وماتدري أنت مكشوف أو لا؟ 🧐\n\n"
+            "لا تشيل هم، افحص جهازك الآن واقطع الشك باليقين: هل إعدادات موقعك في السليم ولا مكشوفة؟\n\n"
+            "🔒 **تطمين أمني:** فحصك سري ومحمي 100%، البوت لا يحفظ أي بيانات شخصية ولا يخزن موقعك نهائياً.\n\n"
+            "اضغط الزر أدناه للبدء :"
         )
         markup = InlineKeyboardMarkup([[InlineKeyboardButton("نعم،  افحص موقعك الآن 🔍", callback_data="want_to_scan")]])
         await update.message.reply_text(text, reply_markup=markup, parse_mode="Markdown")
