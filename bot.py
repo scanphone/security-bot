@@ -146,7 +146,7 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
     elif query.data == "buy_stars":
         chat_id = query.message.chat_id
         title = " تستطيع فحص جوالك عدد لانهائي مدة (30 يوماً)"
-        description = "ستظهر لك بعد الدفع نتيجة كاملة لفحص الجوال وكشف الروت وحالة الجهاز."
+        description = "تبغى تفحص وتتأكد من وضعك (آمن، مكشوف، أو مشبوه) لمدة 30 يوماً كاملة بـ 150 نجمة ⭐. (دفعة لمرة واحدة فقط وليست اشتراكاً متكرراً)."
         payload = "security_scan_subscription"
         currency = "XTR" 
         prices = [LabeledPrice("اشتراك 30 يوم", STARS_PRICE)]
