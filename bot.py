@@ -12,7 +12,7 @@ DB_FILE = 'database.db'
 EXCEL_FILE = 'codThqq.xlsx'
 
 STARS_PRICE = 150  # عدد النجوم المطلوب للاشتراك
-TUTORIAL_IMAGE_URL = 'https://i.top4top.io/p_39331u16a0.png'  # ضع هنا رابط الصورة التوضيحية لشرح الاستخدام
+TUTORIAL_IMAGE_URL = 'https://l.top4top.io/p_3937q3o5f0.jpeg'  # ضع هنا رابط الصورة التوضيحية لشرح الاستخدام
 
 def init_database():
     conn = sqlite3.connect(DB_FILE)
